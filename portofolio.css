@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(54, 50, 50);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+}
+
+.container-fluid {
+    background-color: #1e2424;
+    width: 880px;
+    /* height: 1500px; */
+    padding-bottom: 70px;
+    margin: auto;
+}
+
+.bg-profile {
+    position: relative;
+    height: 250px;
+    margin: auto;
+    background-image: url(img/IMG_20220731_110026.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -230px;
+}
+
+.poto-profile {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-image: url(https://assets.jalantikus.com/assets/cache/560/560/userfiles/2020/10/05/foto-profil-keren-eacb6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 8px #1e2424 solid;
+    border-radius: 50%;
+    bottom: -100px;
+    left: 90px;
+}
+
+.social-media {
+    display: flex;
+    position: absolute;
+    width: fit-content;
+    padding: 0 10px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 5px;
+    right: 17px;
+    bottom: 10px;
+}
+
+.social-media-wrap {
+    width: fit-content;
+    margin: auto;
+}
+
+.social-media-wrap a i {
+    color: #aaa;
+    padding: 2px;
+    transition: all .5s ease;
+}
+
+.social-media-wrap a i:hover {
+    color: white;
+}
+
+.name {
+    color: white;
+    margin-left: 280px;
+    margin-top: 8px;
+    font-size: 2.4;
+    text-transform: capitalize;
+}
+
+.status {
+    display: flex;
+    text-align: center;
+    margin-top: 3px;
+}
+
+.status i {
+    margin-left: 280px;
+    margin-top: 2px;
+    color: #ddd;
+}
+
+.status i::after {
+    padding-left: 10px;
+    color: #ddd;
+    content: "Student";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 50px;
+    color: white;
+    list-style-type: none;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: bolder;
+    transition: all .3s ease;
+}
+
+.active {
+    color: white !important;
+    text-shadow: 0 0 10px #ddd
+}
+
+.navigation li a:hover {
+    color: white;
+    text-shadow: 0 0 10px #ddd;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+}
+
+.container-main {
+    display: flex;
+    margin: auto;
+    width: 750px;
+    align-items: center;
+}
+
+.container-main .about {
+    display: flex;
+    position: relative;
+    flex: 1;
+    color: white;
+    padding: 15px;
+}
+
+.tittle-about {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.container-main .about img {
+    z-index: 1;
+    width: 250px;
+    margin-left: 15px;
+    border-radius: 6px;
+    transition: all .7s ease;
+}
+
+.container-main .another {
+    flex: 2;
+    color: white;
+    margin-left: 50px;
+}
+
+.another p {
+    font-size: 13px;
+    margin-top: 3px;
+    padding-right: 15px;
+}
+
+.another button {
+    padding: 8px 20px;
+    margin-top: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-image: linear-gradient(90deg, #950101, #FF0000);
+    font-weight: bolder;
+}
+
+.educational-bg {
+    flex: 1;
+}
+
+.box-skills {
+    flex: 2;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card img {
+    width: 100px;
+    height: 60px;
+    margin: auto;
+    padding-bottom: 5px;
+}
+
+.content-status {
+    width: 80%;
+    font-size: 13px;
+    margin: auto;
+}
+
+.card .content-status p {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.tittle-skill {
+    color: white;
+    margin-left: 215px;
+    margin-top: 30px;
+}
+
+.skills {
+    display: flex;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.cards-skill {
+    padding: 13px;
+    margin: 0 6px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: .3s ease;
+}
+
+.cards-skill:hover {
+    transform: scale(1.1);
+}
+
+.cards-skill img {
+    width: 100px;
+}
+
+.cards-skill p {
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    font-size: 16px
+}
+
+
+/*GALLERY PAGE*/
+.gallery {
+    display: flex;
+    margin: auto;
+    width: 800px;
+    padding: 25px 0 30px 0;
+}
+
+.tittle-gallery {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.thumbnail {
+    width: 33.3%;
+    height: 256.66px;
+    margin: 0 5px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.thumbnail img {
+    width: 100%;
+    transition: all 1s ease;
+}
+
+.thumbnail img:hover {
+    transform: scale(1.1);
+}
+
+/*HOBBY PAGE*/
+.container-hobby {
+    padding: 30px;
+    margin: auto;
+    width: 700px;
+}
+
+.container-hobby h2 {
+    color: white;
+    text-align: center;
+}
+
+.wrapper-hobby {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    height: 100px;
+    color: white;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.content-hobby {
+    display: flex;
+    flex: 1;
+}
+
+.content-hobby-1 {
+    flex: 6;
+}
+
+.content-hobby img {
+    width: 90px;
+    margin: auto;
+}
+
+.content-hobby-1 h3 {
+    font-size: 21px;
+    margin-bottom: 3px;
+}
+
+.content-hobby,
+.content-hobby-1 {
+    padding: 17px;
+}
